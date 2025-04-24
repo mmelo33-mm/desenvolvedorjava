@@ -1,0 +1,4 @@
+Diego, Táxi
+marcelo, Táxi
+Pedro, Ônibus
+Jo�o, Metrô

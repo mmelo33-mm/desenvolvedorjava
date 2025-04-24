@@ -2,6 +2,7 @@ import java.io.FileWriter; // Classe para escrever no arquivo
 import java.io.IOException; // Classe para tratar exceções do arquivo
 import java.util.Scanner;
 
+
 //comando utf-8 para resolver problemas relacionados a acento//
 
 public class App {
@@ -54,11 +55,18 @@ public class App {
 
 
 
-        //task de hoje: salvar os dados em um arquivo.
-        // salvar task no git e github
+        
         System.out.println("Nome: "+nome+", "+"Meio de transporte: "+meioTransporte);
 
-       
+        try(FileWriter escritor = new FileWriter("dados.txt", true)){
+
+            escritor.write(nome+", "+meioTransporte+"\n");
+            
+            System.out.println("Dados gravados com sucesso");
+
+        }catch(IOException e){
+            System.out.println("Erro ao gravar os dados"+e.getMessage());
+        }
 
     }
 }
