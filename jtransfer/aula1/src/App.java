@@ -1,5 +1,5 @@
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.FileWriter; // Classe para escrever no arquivo
+import java.io.IOException; // Classe para tratar exceções do arquivo
 import java.util.Scanner;
 
 //comando utf-8 para resolver problemas relacionados a acento//
